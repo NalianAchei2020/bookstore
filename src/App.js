@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
-import Book from './components/book';
+import Book from './components/books';
 import Category from './components/category';
 
 function App() {
