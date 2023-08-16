@@ -4,7 +4,7 @@
 
   <br/>
 
-  <h1><b>Math_Magicians</b></h1>
+  <h1><b>BOOKSTORE</b></h1>
 
 </div>
 
@@ -29,14 +29,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math_Magicians <a name="about-project"></a>
+# 📖 BOOKSTORE <a name="about-project"></a>
 
-"Math*Magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
-*[Math_Magicians]\_ is React project
+"BOOKSTORE" is a dynamic website developed with React JS. where users can add books with the authors names, users can as well delete the book from the book list.
 
-![image](https://github.com/NalianAchei2020/math-magicians/assets/88759996/cc26b45f-133e-477a-8c49-51da943239b0)
-
-_[Math_Magicians]_ is React project
+_[BOOKSTORE]_ is React project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,7 +44,7 @@ _[Math_Magicians]_ is React project
 
 ### Key Features <a name="key-features"></a>
 
-- _Math_Magicians_
+- _BOOKSTORE_
 
 ## 🚀 Live Demo
 
@@ -70,7 +67,7 @@ sh
 
 - Create a folder
 - cd into the folder you just created
-- Type git clone `https://github.com/NalianAchei2020/math-magicians.git`
+- Type git clone `https://github.com/NalianAchei2020/bookstore.git`
 
 ### Install
 
@@ -116,7 +113,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/NalianAchei2020/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/NalianAchei2020/bookstore/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
 
