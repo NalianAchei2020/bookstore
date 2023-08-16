@@ -1,9 +1,18 @@
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/header';
+import Book from './components/book';
+import Category from './components/category';
 
 function App() {
   return (
     <div className="App">
-      <h2>Hi</h2>
+      <Header />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Book />} />
+          <Route path="/categories" element={<Category />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
