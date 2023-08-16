@@ -85,7 +85,6 @@ To run the project, `npm start`
 
 On your terminal, cd to the current folder and run
 
-- **npx hint** to test the HTML code
 - npx stylelint `"**/*.{css,scss}"` to test the CSS code
 - npx eslint `npx eslint "**/*.{js,jsx}"` to test the react code
 
