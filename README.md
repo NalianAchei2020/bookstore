@@ -26,6 +26,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -121,3 +122,7 @@ If you like this project, please do well to give it a star
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank the Microverse community for their lessons
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/NalianAchei2020/bookstore/blob/add_Component/LICENSE) licensed
