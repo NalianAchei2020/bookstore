@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
-import Book from './components/books';
-import Category from './components/category';
+import Book from './pages/books';
+import Category from './pages/category';
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Book />} />
           <Route path="/categories" element={<Category />} />

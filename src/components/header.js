@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -7,12 +8,12 @@ function Header() {
       <header>
         <h2 className="bookstore">Bookstore CMS</h2>
         <nav>
-          <a href="/" className="books">
+          <Link to="/" className="books">
             Books
-          </a>
-          <a href="/categories" className="categories">
+          </Link>
+          <Link to="/categories" className="categories">
             Categories
-          </a>
+          </Link>
         </nav>
       </header>
     </div>
