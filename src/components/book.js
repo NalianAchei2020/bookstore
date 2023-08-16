@@ -12,6 +12,7 @@ function Book({ title, author }) {
         Author:
         {author}
       </p>
+      <button type="button">Delete</button>
     </div>
   );
 }
