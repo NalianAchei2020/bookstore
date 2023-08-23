@@ -9,13 +9,9 @@ function Books() {
     setBooks([...books, newBook]);
   };
 
-  const handleDeleteBook = (title) => {
-    setBooks(books.filter((book) => book.title !== title));
-  };
-
   return (
     <div className="container">
-      <BookList books={books} onDelete={handleDeleteBook} />
+      <BookList />
       <BookForm onAddBook={handleAddBook} />
     </div>
   );
