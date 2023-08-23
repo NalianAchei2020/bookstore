@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
-import BookList from '../components/BookList';
-import BookForm from '../components/BookForm';
+import React from 'react';
+import BookList from '../components/displayBooks';
+import BookForm from '../components/addBooks';
 
 function Books() {
-  const [books, setBooks] = useState([]);
-
-  const handleAddBook = (newBook) => {
-    setBooks([...books, newBook]);
-  };
-
   return (
     <div className="container">
       <BookList />
-      <BookForm onAddBook={handleAddBook} />
+      <BookForm />
     </div>
   );
 }
