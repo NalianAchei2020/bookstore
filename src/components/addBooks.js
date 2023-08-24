@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { postBooks } from '../redux/books/booksSlice';
+import './style.css';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
@@ -34,7 +35,7 @@ const BookForm = () => {
 
   return (
     <div>
-      <h2>Add a New Book</h2>
+      <h2 className="addbook">Add a New Book</h2>
       <form onSubmit={handleSubmit}>
         <p>{message}</p>
         <p>{error}</p>
@@ -56,7 +57,9 @@ const BookForm = () => {
           onChange={(e) => setCategory(e.target.value)}
           placeholder="Category"
         />
-        <button type="submit">Add Book</button>
+        <button type="submit" className="btn-add">
+          Add Book
+        </button>
       </form>
     </div>
   );
