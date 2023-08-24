@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { postBooks } from '../redux/books/booksSlice';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+
   const dispatch = useDispatch();
+  const books = useSelector((state) => state.books);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!title || !author || !category) {
@@ -16,13 +19,14 @@ const BookForm = () => {
       return;
     }
     dispatch(
-      addBook({
+      postBooks({
         item_id: uuidv4(),
         title,
         author,
         category,
       }),
     );
+    setError(books.error);
     setTitle('');
     setAuthor('');
     setCategory('');
@@ -33,6 +37,7 @@ const BookForm = () => {
       <h2>Add a New Book</h2>
       <form onSubmit={handleSubmit}>
         <p>{message}</p>
+        <p>{error}</p>
         <input
           type="text"
           value={title}
