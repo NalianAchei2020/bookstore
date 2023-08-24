@@ -54,7 +54,7 @@ const bookSlice = createSlice({
     });
     builder.addCase(postBooks.fulfilled, (state, action) => {
       state.loading = false;
-      state.books = state.books.concat(action.payload);
+      state.books = [...state.books, action.payload];
       state.error = '';
     });
     builder.addCase(postBooks.rejected, (state, action) => {
