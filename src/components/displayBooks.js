@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getBooks, removeBooks } from '../redux/books/booksSlice';
+import './style.css';
 
 function BookList() {
   const dispatch = useDispatch();
@@ -26,23 +27,53 @@ function BookList() {
       {!book.loading && books.length ? (
         <div>
           {books.map((book) => (
-            <ul key={book.id}>
-              <li>
-                <h6> Title:</h6>
-                {book.title}
-              </li>
-              <li>
-                <h6>Author:</h6>
-                {book.author}
-              </li>
-              <li>
-                <h6>category:</h6>
-                {book.category}
-              </li>
-              <button type="button" onClick={() => handleRemove(book.id)}>
-                Remove
-              </button>
-            </ul>
+            <div key={book.id} className="Lesson-Panel">
+              <div>
+                <ul>
+                  <li className="cat">{book.category}</li>
+                  <li className="title">
+                    <h4>{book.title}</h4>
+                  </li>
+                  <li className="list-item">{book.author}</li>
+                </ul>
+                <ul className="list">
+                  <li className="list-item">Comments</li>
+                  <li className="list-item">
+                    <button
+                      type="button"
+                      className="remove"
+                      onClick={() => handleRemove(book.id)}
+                    >
+                      Remove
+                    </button>
+                  </li>
+                  <li className="list-item">Edit</li>
+                </ul>
+              </div>
+              <ul className="list-center">
+                <li>
+                  <div className="Oval" />
+                </li>
+                <li>
+                  <span className="percent">64%</span>
+                  <br />
+                  <span className="completed">Completed</span>
+                </li>
+              </ul>
+              <div>
+                <ul>
+                  <li className="current">Current Chapter</li>
+                  <li>
+                    <h5 className="chapter">Chapter 5</h5>
+                  </li>
+                  <li>
+                    <button type="button" className="btn-update">
+                      Update Progress
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
           ))}
         </div>
       ) : null}
