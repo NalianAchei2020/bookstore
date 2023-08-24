@@ -54,7 +54,7 @@ const bookSlice = createSlice({
     });
     builder.addCase(postBooks.fulfilled, (state, action) => {
       state.loading = false;
-      state.books = state.books.push(action.payload);
+      state.books = state.books.concat(action.payload);
       state.error = '';
     });
     builder.addCase(postBooks.rejected, (state, action) => {
@@ -67,7 +67,7 @@ const bookSlice = createSlice({
     builder.addCase(removeBooks.fulfilled, (state, action) => {
       state.loading = false;
       state.books = state.books.filter(
-        (book) => book.item_id === action.payload,
+        (book) => book.item_id !== action.payload,
       );
       state.error = '';
     });
