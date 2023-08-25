@@ -38,6 +38,7 @@ function BookList() {
                 </ul>
                 <ul className="list">
                   <li className="list-item">Comments</li>
+                  <li className="vertical-line" />
                   <li className="list-item">
                     <button
                       type="button"
@@ -47,6 +48,7 @@ function BookList() {
                       Remove
                     </button>
                   </li>
+                  <li className="vertical-line" />
                   <li className="list-item">Edit</li>
                 </ul>
               </div>
@@ -60,6 +62,7 @@ function BookList() {
                   <span className="completed">Completed</span>
                 </li>
               </ul>
+              <div className="line-2" />
               <div>
                 <ul className="chap-list">
                   <li className="current">Current Chapter</li>
@@ -77,6 +80,7 @@ function BookList() {
           ))}
         </div>
       ) : null}
+      <div className="h-line" />
     </div>
   );
 }

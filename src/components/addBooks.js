@@ -25,7 +25,7 @@ const BookForm = () => {
         title,
         author,
         category,
-      }),
+      })
     );
     setError(books.error);
     setTitle('');
@@ -51,12 +51,13 @@ const BookForm = () => {
           onChange={(e) => setAuthor(e.target.value)}
           placeholder="Author"
         />
-        <input
-          type="text"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          placeholder="Category"
-        />
+        <select value={category} onChange={(e) => setCategory(e.target.value)}>
+          <option>Category</option>
+          <option>Fiction</option>
+          <option>Culture</option>
+          <option>Happiness</option>
+          <option>Religion</option>
+        </select>
         <button type="submit" className="btn-add">
           Add Book
         </button>

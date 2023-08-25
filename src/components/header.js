@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import userImg from '../asset/user.svg';
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
             Categories
           </Link>
         </nav>
+        <img src={userImg} alt="user-img" className="Mask" />
       </header>
     </div>
   );
