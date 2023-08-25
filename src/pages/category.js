@@ -3,7 +3,7 @@ import React from 'react';
 function Category() {
   return (
     <div>
-      <h1>Category</h1>
+      <h1>Under Development</h1>
     </div>
   );
 }
