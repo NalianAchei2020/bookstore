@@ -25,7 +25,7 @@ const BookForm = () => {
         title,
         author,
         category,
-      })
+      }),
     );
     setError(books.error);
     setTitle('');
