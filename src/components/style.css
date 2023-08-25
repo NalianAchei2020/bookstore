@@ -72,13 +72,16 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .data-list h4 {
   margin-block: 5px;
 }
+
 .list {
   display: flex;
   gap: 2em;
 }
+
 .cat {
   opacity: 0.5;
   font-size: 0.875rem;
@@ -86,24 +89,29 @@ a {
   line-height: normal;
   color: #121212;
 }
+
 .list-item {
   color: #4386bf;
   font-size: 0.875rem;
   font-weight: 300;
 }
+
 .remove {
   border: none;
   outline: none;
   background-color: #fff;
   color: #4386bf;
 }
+
 .chap-list h5 {
   margin-block: 5px;
 }
+
 .current {
   color: #121212;
   opacity: 0.5;
 }
+
 .btn-update {
   border: none;
   outline: none;
@@ -112,18 +120,21 @@ a {
   padding: 5px;
   color: #fff;
 }
+
 .addbook {
   color: #121212;
   opacity: 0.5;
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+
 input {
   width: 29%;
   padding: 10px;
   margin-right: 5px;
   border: 1px solid #c2bebe;
 }
+
 .btn-add {
   border: none;
   outline: none;
@@ -132,12 +143,14 @@ input {
   color: #fff;
   border-radius: 2px;
 }
+
 .Oval {
   width: 4.25rem;
   height: 4.25rem;
   border-radius: 50%;
   border: solid 5px transparent;
-  background-image: linear-gradient(white, white),
+  background-image:
+    linear-gradient(white, white),
     conic-gradient(
       #0290ff 0deg,
       #0290ff 90deg,
@@ -150,14 +163,17 @@ input {
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
+
 .list-center {
   display: flex;
   gap: 1em;
 }
+
 .percent {
   font-size: 2rem;
   font-weight: 500;
 }
+
 .completed {
   font-size: 0.875rem;
   color: #121212;
