@@ -192,7 +192,8 @@ select {
   height: 4.25rem;
   border-radius: 50%;
   border: solid 5px transparent;
-  background-image: linear-gradient(white, white),
+  background-image:
+    linear-gradient(white, white),
     conic-gradient(
       #0290ff 0deg,
       #0290ff 90deg,
