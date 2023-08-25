@@ -71,14 +71,15 @@ a {
   margin-bottom: 2em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+.data-list h4 {
+  margin-block: 5px;
 }
 .list {
   display: flex;
   gap: 2em;
 }
 .cat {
-  margin-top: 5px;
   opacity: 0.5;
   font-size: 0.875rem;
   font-weight: bold;
@@ -95,6 +96,9 @@ a {
   outline: none;
   background-color: #fff;
   color: #4386bf;
+}
+.chap-list h5 {
+  margin-block: 5px;
 }
 .current {
   color: #121212;
@@ -131,13 +135,20 @@ input {
 .Oval {
   width: 4.25rem;
   height: 4.25rem;
-  border-style: solid;
   border-radius: 50%;
-  border-width: 5px;
-  border-right-color: #0290ff;
-  border-top-color: #0290ff;
-  border-bottom-color: #0290ff;
-  border-left-color: #c2bebe;
+  border: solid 5px transparent;
+  background-image: linear-gradient(white, white),
+    conic-gradient(
+      #0290ff 0deg,
+      #0290ff 90deg,
+      #0290ff 90deg,
+      #0290ff 180deg,
+      #0290ff 180deg,
+      #0290ff 270deg,
+      #c2bebe 270deg
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 .list-center {
   display: flex;

@@ -29,7 +29,7 @@ function BookList() {
           {books.map((book) => (
             <div key={book.id} className="Lesson-Panel">
               <div>
-                <ul>
+                <ul className="data-list">
                   <li className="cat">{book.category}</li>
                   <li className="title">
                     <h4>{book.title}</h4>
@@ -61,7 +61,7 @@ function BookList() {
                 </li>
               </ul>
               <div>
-                <ul>
+                <ul className="chap-list">
                   <li className="current">Current Chapter</li>
                   <li>
                     <h5 className="chapter">Chapter 5</h5>
