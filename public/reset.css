@@ -1,8 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Remove default margin */
@@ -35,6 +37,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 /* A elements that don't have a class get default styles */
