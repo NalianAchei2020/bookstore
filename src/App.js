@@ -4,16 +4,15 @@ import { useDispatch } from 'react-redux';
 import Header from './components/header';
 import Book from './pages/books';
 import Category from './pages/category';
-import { getBooks} from './redux/books'
+import { getBooks } from './redux/books/booksSlice';
 import './App.css';
-
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getBooks());
   }, [dispatch]);
-      
+
   return (
     <div className="App">
       <Router>
