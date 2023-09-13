@@ -53,6 +53,7 @@ const BookForm = () => {
         />
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
           <option>Category</option>
+          <option>Love</option>
           <option>Fiction</option>
           <option>Culture</option>
           <option>Happiness</option>
