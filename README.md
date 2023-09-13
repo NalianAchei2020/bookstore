@@ -49,7 +49,7 @@ _[BOOKSTORE]_ is React project
 
 ## 🚀 Live Demo
 
-- [Live Link](https://650117a73f555b1ed7aa8147--silver-meerkat-f8b24c.netlify.app/)
+- [Live Link](https://bookstore-reactapp.netlify.app/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
